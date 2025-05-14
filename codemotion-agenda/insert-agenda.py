@@ -42,8 +42,6 @@ def get_agenda_items(file_path):
     return agenda
 
 # Print the agenda with rich
-
-
 def print_agenda(agenda):
     console.print("[bold magenta]Agenda:[/bold magenta]")
     for item in agenda:
