@@ -1,0 +1,16 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+    volumes:
+      - ../..:/workspaces:cached    
+    command: sleep infinity
+
+  qdrant:
+    image: qdrant/qdrant:v1.14.0
+    ports:
+      - 6333:6333
+    volumes:
+      - qdrant-storage:/qdrant/storage
+
+volumes:
+  qdrant-storage:

@@ -1,0 +1,799 @@
+[
+    {
+        "date": "2025-05-20",
+        "time": "09:30",
+        "duration": 15,
+        "stage": "Main Stage",
+        "title": "Opening",
+        "type": "Opening"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "09:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "The Oppression Machine Data, Doom, and Discipline in the Age of AI and Climate Collapse",
+        "speaker": "Marta Peirano",
+        "type": "Talk",
+        "tags": [
+            "Inspirational",
+            "Non Technical/For Everyone",
+            "English"
+        ]
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:00",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Potencia el desarrollo de su interfaz con componentes web",
+        "speaker": "Jorge del Casar",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:00",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Cómo detener un ataque de denegación de servicio con Java y XDP",
+        "speaker": "Ramsés Rodríguez Martínez",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:00",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Arquitectura para la Sostenibilidad",
+        "speaker": "Eugenio Concepcion",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:00",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Large Vision Models: Generando imágenes artificiales mediante ideas.",
+        "speaker": "Moisés Martínez",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:00",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Más allá del testing: el futuro de la ciberseguridad está en las matemáticas",
+        "speaker": "Fernanda Andrade",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "10:50",
+        "duration": 70,
+        "stage": "Plató 4",
+        "title": "Llévate tu llavero 3D y despierta tu creatividad",
+        "speaker": "Olga Noguera",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "React Beyond the DOM",
+        "speaker": "Erik Rasmussen",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Esas llamadas a un API podrían haber sido un JOIN!!",
+        "speaker": "Ivan García Sainz-Aja",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Hunting with Stream Gatherers",
+        "speaker": "Piotr Przybyl",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Hack & Patch: OWASP en Combate",
+        "speaker": "David Soto, Samuel Hernández Martos",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "How to Design for New Frontiers and Blockchain Technologies",
+        "speaker": "Basak Haznedaroglu",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "11:45",
+        "duration": 120,
+        "stage": "Plató 4",
+        "title": "AI development under control",
+        "speaker": "Sergi Colldeforn Peris",
+        "type": "Workshop"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "12:00",
+        "duration": 60,
+        "stage": "Community Area",
+        "title": "Desafíos tech: Mujeres que hicieron historia y el mundo de las APIs by LTY y APIQuality",
+        "speaker": "Kelly Cuesta",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "13:00",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Modern cibercriminals don't hack in, they log in",
+        "speaker": "Yaiza Rubio, Javier Espinosa",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "13:00",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Passkeys on Android",
+        "speaker": "Mario Bodemann",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "13:00",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "¡No volverás a programar igual! Desata a GitHub Copilot con el Model Agente y MCP Servers",
+        "speaker": "Gisela Torres",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "13:00",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Dantotsu: The Radical Path to Bug-Free Code",
+        "speaker": "Chico García",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "13:00",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "¿Cuándo refactorizar merece la pena en la mitad de tiempo? La pregunta que todo CEO le hace a su CTO",
+        "speaker": "Alberto Hernández, Jorge Ferrer",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "14:35",
+        "duration": 50,
+        "stage": "Main Stage",
+        "title": "Lunch",
+        "type": "Lunch"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Multi-Cloud Replication: From Chaos to Control",
+        "speaker": "Renato Guerra Cavalcanti",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Redefining data: Handling more data than you can handle",
+        "speaker": "Kim van Wilgen",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Agentes de IA: la nueva era del software inteligente",
+        "speaker": "David Mangas, David Sancho Ruiz",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "ADN Digital Descentralizado: La Sinapsis Ética entre Humanos y Máquinas",
+        "speaker": "Ivano García",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Bajo la superficie de React: Explorando las profundidades para crear mejores desarrollos",
+        "speaker": "Miguel Martín López, Roger Sanz Cortés",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:30",
+        "duration": 120,
+        "stage": "Plató 4",
+        "title": "Kotlin Multiplatform en Producción: Interoperabilidad Real con IOS",
+        "speaker": "Kleiber Perez, Ivan Carracedo, Daniel Carracedo",
+        "type": "Workshop"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:45",
+        "duration": 45,
+        "stage": "Community Area",
+        "title": "Trivial Tech",
+        "speaker": "Fernando Gomez",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "15:45",
+        "duration": 60,
+        "stage": "Community Area",
+        "title": "Redescúbrete con IA y vuelve a tu niño interior",
+        "speaker": "Codemotion Community",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "16:30",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Using server side Web Assembly components to build next-gen architectures",
+        "speaker": "Frank Lyaruu",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "16:30",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Banca Conversacional: Transformando la experiencia del cliente con IAG",
+        "speaker": "Jose Antonio Rodríguez Jiménez",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "16:30",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Optimizando el rendimiento de la visualización de datos en mapas web",
+        "speaker": "Raul Jimenez Ortega",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "16:30",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Surfing the Generative AI Wave: A New Era in Building Banking Systems",
+        "speaker": "Pablo Delgado Romero",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "16:30",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Flip the Script: Mastering Dependency Inversion in JS/TS Mobile Apps",
+        "speaker": "Samantha Campisi, Alejandro Weichandt",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-20",
+        "time": "17:30",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Transformando una aldea de 97 habitantes con tecnología y arte",
+        "speaker": "Agustín Jamardo",
+        "type": "Talk",
+        "tags": [
+            "Inspirational",
+            "Ethic",
+            "Soft Skills",
+            "Work-Life Balance",
+            "NonTechnical/For Everyone",
+            "Español"
+        ]
+    },
+    {
+        "date": "2025-05-21",
+        "time": "09:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "El Boom de la IA Generativa: realidades, promesas y situaciones incómodas",
+        "speaker": "Nerea Luis",
+        "type": "Talk",
+        "tags": [
+            "AI/ML",
+            "No Technical/For Everyone",
+            "Español"
+        ]
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "React Reinvented",
+        "speaker": "Javi Velasco",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Resolviendo el problema del aparcamiento en Madrid con Airflow y Streamlit",
+        "speaker": "Luis Merino, Ruth Navarro Carrasco",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Revealing the magic behind new annotations",
+        "speaker": "Álvaro Sánchez-Mariscal",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Ser DEV en tiempos de IA",
+        "speaker": "Gabriel Andújar",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Choose Your Own Adventure to Get Started with Grafana Loki",
+        "speaker": "Imma Valls",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "10:45",
+        "duration": 45,
+        "stage": "Plató 4",
+        "title": "Hazte con tu llavero 3D y Descubre a las mujeres que hicieron historia",
+        "speaker": "Virginia González",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Hexogonal Architecture in Practice, Live Coding That Will Make Your Applications More Sustainable",
+        "speaker": "Julien Topçu",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Unsustainable Code II: Even Worse",
+        "speaker": "César Albarrán",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Building End to End Gen AI Powered Product: From Data to Production",
+        "speaker": "Grace Adamson",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Challenges in User Authentication: Balancing Security & User Experience",
+        "speaker": "Isabelle Musuy",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:45",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Arquitectura de datos para la gestión de la ciberinteligencia",
+        "speaker": "Daniel A. Jaime Casado Aparicio",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "11:30",
+        "duration": 120,
+        "stage": "Plató 4",
+        "title": "Construyendo un unicornio: La tecnología altamente escalable tras el éxito de Celonis",
+        "speaker": "Jorge Ferrer Zarzuela",
+        "type": "Workshop"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:20",
+        "duration": 60,
+        "stage": "Community Area",
+        "title": "Escribe el Futuro y Explora DrupalCMS",
+        "speaker": "Oskar Calvo",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Procesa y analiza millones de eventos por segundo en tiempo real con open source",
+        "speaker": "Fernando Pérez",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Patterns for efficient serverless development",
+        "speaker": "Yan Cui",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Descubre cómo construir una infraestructura IoT nativa en AWS desde 0 y en pocos clics",
+        "speaker": "Gorka Huygen García, Francisco Amil Buceo",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Lo que nadie nos contó: el poder del Event-Driven Development",
+        "speaker": "Rafael Juan Jiménez, Godoy Roberto Méndez",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "12:45",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "WordPress through the terminal",
+        "speaker": "Milana Cap",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Understanding Kubernetes in a visual way",
+        "speaker": "Aurélie Vache",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Tecnología para una medicina personalizada",
+        "speaker": "Justo Aguayo",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Lo que Dante: una guía Divina para documentar el infierno del código.",
+        "speaker": "Patricia López",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Más allá del prompt: cómo MCP conecta modelos de lenguaje y herramientas reales",
+        "speaker": "Fran González",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "LLM-Driven Attack Flow Generation from Security Publications",
+        "speaker": "Ángeles Macías Rubio, Juan Manuel Cristóbal Monroig",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "13:15",
+        "duration": 45,
+        "stage": "Community Area",
+        "title": "Desafía tu Código y Descubre la IA en Medicina",
+        "speaker": "Ángeles Macías Rubio",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "14:10",
+        "duration": 45,
+        "stage": "Community Area",
+        "title": "Bingo Tech: Descubre el pensamiento computacional",
+        "speaker": "Laura Cristalino",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "14:10",
+        "duration": 45,
+        "stage": "Community Area",
+        "title": "Trivial Tech",
+        "speaker": "Fernando Gomez",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "14:35",
+        "duration": 110,
+        "stage": "Main Stage",
+        "title": "Lunch",
+        "type": "Lunch"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:40",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Unlocking Java's Code Maze",
+        "speaker": "Mihaela Gheorghe-Roman",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "Componentes Inteligentes: Integraciones simples, funcionalidades poderosas",
+        "speaker": "Pablo Izaguirre",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "WWWAI: Constructing a truly open GenAI app with WebAssembly, WebGPU, and WebAI",
+        "speaker": "Susanna Wong",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "De código a DevPlatform: Optimizando la experiencia del desarrollador",
+        "speaker": "Luis Fraile, Sergio Valverde",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Revolución IA: Cómo las empresas están redefiniendo el futuro",
+        "speaker": "Eliza Capasoci, Manuel Tarazona, Pablo Carlos, Laura García",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 120,
+        "stage": "Plató 4",
+        "title": "Hands-on IA Applications Development: Agents and MCPs.",
+        "speaker": "Diego Díaz, Álvaro Pastor Sánchez",
+        "type": "Workshop"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "15:45",
+        "duration": 70,
+        "stage": "Community Area",
+        "title": "Pon a prueba tu seguridad y reimagináte con la IA",
+        "speaker": "Cristian Bletti",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Community Area",
+        "title": "Desafíos de Comunidad: Comparte soluciones y reimagináte con IA",
+        "speaker": "Codemotion Community",
+        "type": "Other"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "World has gone Edge – the future of IoT and Smart Devices",
+        "speaker": "Pawel Skiba",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "AI Agents Graph: Your following tool for your Java AI journey",
+        "speaker": "Álex Soto",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Dominando OAuth 2.0 y OpenID Connect",
+        "speaker": "Leonardo Micheloni",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Refactorizar para competir: Cómo transformar la deuda técnica en valor de mercado",
+        "speaker": "Emilio Carrión",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Plató 3",
+        "title": "Lo que no sabías que pasaba en tu navegador",
+        "speaker": "Jorge Baumann",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Plató 4",
+        "title": "Interviewing is hard",
+        "speaker": "Ángel Paredes Barato",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "16:45",
+        "duration": 45,
+        "stage": "Plató 4",
+        "title": "¿Divide y Vencerás? - Explorando la propuesta de 'JSO' y 'JSSugar' del TC39",
+        "speaker": "Daniel Hervás",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:45",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Escribiendo código en vivo con AI",
+        "speaker": "Jesús Espino",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:45",
+        "duration": 45,
+        "stage": "Demo 3",
+        "title": "How to build a database-like application",
+        "speaker": "Tommaso Allevi",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:45",
+        "duration": 45,
+        "stage": "Plató 2",
+        "title": "Dominando OAuth 2.0 y OpenID Connect",
+        "speaker": "Leonardo Micheloni",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:45",
+        "duration": 45,
+        "stage": "Plató 5",
+        "title": "Refactorizar para competir: Cómo transformar la deuda técnica en valor de mercado",
+        "speaker": "Emilio Carrión",
+        "type": "Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:45",
+        "duration": 15,
+        "stage": "Plató 3",
+        "title": "Lo que no sabías que pasaba en tu navegador",
+        "speaker": "Jorge Baumann",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "18:00",
+        "duration": 15,
+        "stage": "Plató 3",
+        "title": "Interviewing is hard",
+        "speaker": "Ángel Paredes Barato",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "18:15",
+        "duration": 15,
+        "stage": "Plató 3",
+        "title": "¿Divide y Vencerás? - Explorando la propuesta de 'JSO' y 'JSSugar' del TC39",
+        "speaker": "Daniel Hervás",
+        "type": "Lightning Talk"
+    },
+    {
+        "date": "2025-05-21",
+        "time": "17:30",
+        "duration": 45,
+        "stage": "Main Stage",
+        "title": "Transformando una aldea de 97 habitantes con tecnología y arte",
+        "speaker": "Agustín Jamardo",
+        "type": "Talk",
+        "tags": [
+            "Inspirational",
+            "Ethic",
+            "Soft Skills",
+            "Work-Life Balance",
+            "NonTechnical/For Everyone",
+            "Español"
+        ]
+    }
+]
