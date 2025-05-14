@@ -41,25 +41,35 @@ def get_agenda_items(file_path):
         agenda = json.load(file)
     return agenda
 
-# Print the agenda with rich
-def print_agenda(agenda):
-    console.print("[bold magenta]Agenda:[/bold magenta]")
-    for item in agenda:
-        console.print(f"[bold cyan]{item['title']}[/bold cyan]")
-        console.print(f"  [green]Date:[/green] {item['date']}")
-        console.print(f"  [green]Time:[/green] {item['time']}")
-        console.print(f"  [green]Stage:[/green] {item['stage']}")
-        if 'speaker' in item:
-            console.print(f"  [green]Speaker:[/green] {item['speaker']}")
-        if 'tags' in item:
-            console.print(f"  [green]Tags:[/green] {', '.join(item['tags'])}")
-        console.print(f"  [green]Type:[/green] {item['type']}")
-        console.print("")
+# Print the agenda in tables by day and time
+def print_agenda_by_day_and_time(agenda):
+    from rich.table import Table
+    from itertools import groupby
+    from operator import itemgetter
+
+    # Ordenar por fecha y hora
+    agenda_sorted = sorted(agenda, key=lambda x: (x['date'], x['time']))
+    for date, items in groupby(agenda_sorted, key=itemgetter('date')):
+        table = Table(title=f"Agenda {date}")
+        table.add_column("Hora", style="cyan", no_wrap=True)
+        table.add_column("Stage", style="magenta")
+        table.add_column("Título", style="bold")
+        table.add_column("Ponente(s)", style="green")
+        table.add_column("Tipo", style="yellow")
+        for item in items:
+            table.add_row(
+                item['time'],
+                item['stage'],
+                item['title'],
+                item.get('speaker', ''),
+                item['type']
+            )
+        console.print(table)
 
 
 agenda = get_agenda_items(agenda_file)
 
-print_agenda(agenda)
+print_agenda_by_day_and_time(agenda)
 
 # Count the number of items in the agenda
 agenda_count = len(agenda)
