@@ -16,5 +16,8 @@ El modo agente de GitHub Copilot Chat es una funcionalidad avanzada que permite 
 
 ## Misión 1: Recuperar la agenda de Codemotion Madrid 2025
 
-Esta la podemos encontrar aqui: https://conferences.codemotion.com/madrid2025/es/agenda-es/ y quiero que GitHub Copilot Chat pueda usarla para darme recomendaciones de charlas que ver durante estos dos días. Así que lo primero que hice fue unos cuantos pantallazos de la web de la Codemotion 😇
+Esta la podemos encontrar aqui: https://conferences.codemotion.com/madrid2025/es/agenda-es/ y quiero que GitHub Copilot Chat pueda usarla para darme recomendaciones de charlas que ver durante estos dos días. Así que lo primero que hice fue unos cuantos pantallazos de la web de la Codemotion 😇 que he guardado en `codemotion-agenda/screenshots`. Estos se los he pasado a GitHub Copilot en su modo agente para que los leyera y me creara un JSON con la info de todas las charlas en el directorio `codemotion-agenda/data/agenda-codemotion-2025.json`
 
+## Mision 2; Guardar la agenda en una base de datos vectorial
+
+Para guardar la agenda en una base de datos vectorial voy a utilizar Qdrant, que es una base de datos vectorial open source. Para ello he creado un script en Python que lee el JSON que hemos creado en la misión 1 y lo guarda en Qdrant. El script se encuentra en `codemotion-agenda/scripts/insert-agenda.py`. La base de datos de Qdrant forma parte de mi configuración de Dev Containers, por lo que no necesitas instalar nada.
