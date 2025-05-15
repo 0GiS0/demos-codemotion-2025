@@ -16,16 +16,29 @@ qdrant_url = os.getenv("QDRANT_URL")
 
 # Create a collection if it doesn't exist
 qdrant_client = QdrantClient(url=qdrant_url)
-try:
-    qdrant_client.get_collection(collection_name)
-except UnexpectedResponse:
-    qdrant_client.recreate_collection(
-        collection_name=collection_name,
+
+
+def recreate_collection_if_exists(client, name, vector_size, distance):
+    try:
+        client.get_collection(name)
+        client.delete_collection(name)
+    except UnexpectedResponse:
+        pass
+    client.recreate_collection(
+        collection_name=name,
         vectors_config=VectorParams(
-            size=3072,
-            distance=Distance.COSINE
+            size=vector_size,
+            distance=distance
         )
     )
+
+
+recreate_collection_if_exists(
+    qdrant_client,
+    collection_name,
+    vector_size=3072,
+    distance=Distance.COSINE
+)
 
 # Load OpenAI API key
 client = OpenAI(
@@ -89,7 +102,12 @@ for item in track(agenda, description="Inserting agenda items into Qdrant..."):
 
         response = client.embeddings.create(
             model=os.getenv("GITHUB_MODELS_MODEL_FOR_EMBEDDINGS"),
-            input=item['title']
+            input="Títutlo: " + item['title'] +
+            "\nFecha: " + item['date'] +
+            "\nHora: " + item['time'] +
+            "\nStage: " + item['stage'] +
+            "\nPonente(s): " + item.get('speaker', '') +
+            "\nTipo: " + item['type']
         )
 
         console.print(
