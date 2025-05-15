@@ -34,5 +34,5 @@ Para nuestra cuarta mision he creado un MCP Server que se encuentra en el direct
 Puedes probar el servidor usando la herramienta MCP Inspector:
 
 ```bash
-npx 
+npx @modelcontextprotocol/inspector
 ```
