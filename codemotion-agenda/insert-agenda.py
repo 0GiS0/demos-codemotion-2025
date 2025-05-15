@@ -22,7 +22,7 @@ except UnexpectedResponse:
     qdrant_client.recreate_collection(
         collection_name=collection_name,
         vectors_config=VectorParams(
-            size=1536,
+            size=3072,
             distance=Distance.COSINE
         )
     )
@@ -42,6 +42,8 @@ def get_agenda_items(file_path):
     return agenda
 
 # Print the agenda in tables by day and time
+
+
 def print_agenda_by_day_and_time(agenda):
     from rich.table import Table
     from itertools import groupby
@@ -74,3 +76,49 @@ print_agenda_by_day_and_time(agenda)
 # Count the number of items in the agenda
 agenda_count = len(agenda)
 console.print(f"[bold green]Total agenda items: {agenda_count}[/bold green]")
+
+
+# Insert agenda items into Qdrant
+id_counter = 0
+
+for item in track(agenda, description="Inserting agenda items into Qdrant..."):
+    try:
+
+        console.print(
+            f"[bold blue]Getting the embedding for:[/bold blue] ", item['title'])
+
+        response = client.embeddings.create(
+            model=os.getenv("GITHUB_MODELS_MODEL_FOR_EMBEDDINGS"),
+            input=item['title']
+        )
+
+        console.print(
+            f"[bold blue]Embedding for item:[/bold blue] ", item['title'])
+
+        vector = response.data[0].embedding
+
+        # Insert the item into Qdrant
+        qdrant_client.upsert(
+            collection_name=collection_name,
+            points=[
+                {
+                    "id": id_counter,
+                    "vector": vector,
+                    "payload": {
+                        "title": item['title'],
+                        "date": item['date'],
+                        "time": item['time'],
+                        "stage": item['stage'],
+                        "speaker": item.get('speaker', ''),
+                        "type": item['type']
+                    }
+                }
+            ]
+        )
+        id_counter += 1
+    except Exception as e:
+        console.print(
+            f"[bold red]Error inserting item {item['title']}: {e}[/bold red]")
+
+console.print(
+    f"[bold green]{id_counter} items inserted successfully![/bold green]")
