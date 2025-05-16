@@ -17,3 +17,4 @@ Coding standards, domain knowledge, and preferences that AI should follow.
 - Use `if __name__ == '__main__':` for script entry points.
 - Use `import` statements at the top of the file.
 - Use `isinstance` for type checking.
+- `requirements.txt` should be used for package dependencies and the version should be pinned.
