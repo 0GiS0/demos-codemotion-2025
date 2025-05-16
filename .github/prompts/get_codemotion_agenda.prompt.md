@@ -1,46 +1,34 @@
 ---
 
 mode: 'agent'
-tools: ['browser_navigate', 'browser_click']
 description: 'Este prompt está diseñado para extraer la agenda de Codemotion Madrid 2025 utilizando el MCP Server de Playwright.'
 
 ---
 
-Abre el navegador y accede a la agenda de Codemotion Madrid 2025: https://conferences.codemotion.com/madrid2025/es/agenda-es/
+Navigate to https://conferences.codemotion.com/madrid2025/es/agenda-es/ and extract all the sessions from the agenda for all days of the event.
 
-Extrae todas las sesiones de la agenda de todos los días del evento (no solo martes y miércoles, sino cualquier día que aparezca en la agenda).
+For each session, collect and store the following properties in an array of objects:
 
-Para cada sesión, recopila y guarda en un array de objetos las siguientes propiedades:
+date (format: DD-MM-YYYY)
 
-date (formato DD-MM-YYYY)
 time
+
 duration
+
 stage
+
 title
+
 speakers
+
 type
+
 tags
 
-Vuelca el array completo en un único archivo JSON llamado codemotion_agenda_powered_by_playwright.json en el directorio codemotion-agenda/data. El archivo debe contener un array de objetos, donde cada elemento es una sesión con las propiedades mencionadas.
+Dump the full array into a single JSON file named codemotion_agenda_powered_by_playwright.json inside the codemotion-agenda/data directory. The file must contain an array of objects, where each element represents a session with the specified properties.
 
-Ejemplo de estructura JSON:
+IMPORTANT: Sessions must appear in the same order as they do on the website. Do not change the session order. If any property is missing, leave it empty string.
 
-```json
-[
-  {
-    "date": "20-05-2025",
-    "time": "09:30",
-    "duration": 15,
-    "stage": "Main Stage",
-    "title": "Opening",
-    "speakers": [],
-    "type": "Opening",
-    "tags": []
-  },
-  // ...el resto de las sesiones...
-]
-```
+The stage where each session takes place is written at the top of the table, such as “Main Stage”, “Demo 3”, “Plató 2”, “Plató 5”, “Plató 3”, “Plató 4”, and “Community Area”. Make sure each talk is correctly assigned to its corresponding stage.
 
-IMPORTANTE: las sesiones deben estar en el mismo orden que aparecen en la agenda de la web. No modifiques el orden de las sesiones. Si no hay información para alguna propiedad, déjala vacía o como null.
-
-Asegúrate de que el archivo JSON esté bien formado.
+Do not make up any data—only include sessions that you actually retrieve from the Codemotion URL.
