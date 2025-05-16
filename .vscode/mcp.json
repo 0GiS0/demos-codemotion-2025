@@ -2,6 +2,13 @@
     "servers": {
         "codemotion-mcp-server": {
             "url": "http://localhost:3000/mcp"
+        },
+        "playwright-mcp": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
         }
     }
 }

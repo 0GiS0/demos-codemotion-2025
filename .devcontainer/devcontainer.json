@@ -28,5 +28,6 @@
 			"label": "Qdrant",
 			"onAutoForward": "notify"
 		}
-	}
+	},
+	"postCreateCommand": "npx -y playwright install chrome"
 }
