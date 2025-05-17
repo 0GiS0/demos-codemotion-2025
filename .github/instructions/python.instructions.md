@@ -1,8 +1,7 @@
 ---
 applyTo: '**/*.py'
 ---
-Coding standards, domain knowledge, and preferences that AI should follow.
-
+# Python Code Style Guide
 - Use single quotes for strings.
 - Use snake_case for variable and function names.
 - Include docstrings for all public functions and classes.
