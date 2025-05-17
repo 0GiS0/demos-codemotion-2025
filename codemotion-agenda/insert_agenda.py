@@ -64,21 +64,30 @@ def print_agenda_by_day_and_time(agenda):
     from operator import itemgetter
 
     # Ordenar por fecha y hora
-    agenda_sorted = sorted(agenda, key=lambda x: (x['date'], x['time']))
+    agenda_sorted = sorted(
+        [item for item in agenda if 'date' in item and 'time' in item],
+        key=lambda x: (x['date'], x['time'])
+    )
     for date, items in groupby(agenda_sorted, key=itemgetter('date')):
-        table = Table(title=f"Agenda {date}")
-        table.add_column("Hora", style="cyan", no_wrap=True)
-        table.add_column("Stage", style="magenta")
-        table.add_column("Título", style="bold")
-        table.add_column("Ponente(s)", style="green")
-        table.add_column("Tipo", style="yellow")
+        table = Table(title=f'Agenda {date}')
+        table.add_column('Hora', style='cyan', no_wrap=True)
+        table.add_column('Stage', style='magenta')
+        table.add_column('Título', style='bold')
+        table.add_column('Ponente(s)', style='green')
+        table.add_column('Tipo', style='yellow')
         for item in items:
+            # Recuperar speakers correctamente como string
+            speakers = ''
+            if 'speakers' in item and isinstance(item['speakers'], list):
+                speakers = ', '.join(item['speakers'])
+            elif 'speaker' in item:
+                speakers = item.get('speaker', '')
             table.add_row(
-                item['time'],
-                item['stage'],
-                item['title'],
-                item.get('speaker', ''),
-                item['type']
+                item.get('time', ''),
+                item.get('stage', ''),
+                item.get('title', ''),
+                speakers,
+                item.get('type', '')
             )
         console.print(table)
 
@@ -97,22 +106,23 @@ id_counter = 0
 
 for item in track(agenda, description="Inserting agenda items into Qdrant..."):
     try:
+        # Recuperar speakers correctamente como string
+        speakers = ''
+        if 'speakers' in item and isinstance(item['speakers'], list):
+            speakers = ', '.join(item['speakers'])
+        elif 'speaker' in item:
+            speakers = item.get('speaker', '')
 
         console.print(
-            f"[bold blue]Getting the embedding for:[/bold blue] ", item['title'])
+            f"[bold blue]Getting the embedding for:[/bold blue] {item['title']}")
 
         response = client.embeddings.create(
             model=os.getenv("GITHUB_MODELS_MODEL_FOR_EMBEDDINGS"),
-            input="Títutlo: " + item['title'] +
-            "\nFecha: " + item['date'] +
-            "\nHora: " + item['time'] +
-            "\nStage: " + item['stage'] +
-            "\nPonente(s): " + item.get('speaker', '') +
-            "\nTipo: " + item['type']
+            input=f"Títutlo: {item['title']}\nFecha: {item.get('date', '')}\nHora: {item.get('time', '')}\nStage: {item.get('stage', '')}\nPonente(s): {speakers}\nTipo: {item.get('type', '')}"
         )
 
         console.print(
-            f"[bold blue]Embedding for item:[/bold blue] ", item['title'])
+            f"[bold blue]Embedding for item:[/bold blue] {item['title']}")
 
         vector = response.data[0].embedding
 
@@ -124,12 +134,12 @@ for item in track(agenda, description="Inserting agenda items into Qdrant..."):
                     "id": id_counter,
                     "vector": vector,
                     "payload": {
-                        "title": item['title'],
-                        "date": item['date'],
-                        "time": item['time'],
-                        "stage": item['stage'],
-                        "speaker": item.get('speaker', ''),
-                        "type": item['type']
+                        "title": item.get('title', ''),
+                        "date": item.get('date', ''),
+                        "time": item.get('time', ''),
+                        "stage": item.get('stage', ''),
+                        "speakers": speakers,
+                        "type": item.get('type', '')
                     }
                 }
             ]
@@ -137,7 +147,7 @@ for item in track(agenda, description="Inserting agenda items into Qdrant..."):
         id_counter += 1
     except Exception as e:
         console.print(
-            f"[bold red]Error inserting item {item['title']}: {e}[/bold red]")
+            f"[bold red]Error inserting item {item.get('title', '')}: {e}[/bold red]")
 
 console.print(
     f"[bold green]{id_counter} items inserted successfully![/bold green]")
