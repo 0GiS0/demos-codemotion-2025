@@ -4,8 +4,8 @@ import OpenAI from 'openai';
 
 
 export const registerSessionTool = (server: any): void => {
-    // Get sessions from codemotion agenda in Qdrant
-    server.tool("sessions", "Get the sessions from codemotion agenda in Qdrant",
+    // Get sessions from Codemotion agenda in Qdrant
+    server.tool("sessions", "Get the sessions from Codemotion agenda",
         {
             date: z.string().optional(),
             query: z.string().min(1).max(100)
