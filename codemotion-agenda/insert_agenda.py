@@ -11,6 +11,8 @@ from rich.progress import track
 load_dotenv()
 console = Console()
 
+
+agenda_file = "codemotion-agenda/data/agenda-codemotion-2025.json"
 collection_name = os.getenv("QDRANT_COLLECTION_NAME")
 qdrant_url = os.getenv("QDRANT_URL")
 
@@ -46,7 +48,6 @@ client = OpenAI(
     api_key=os.getenv("GITHUB_TOKEN"),
 )
 
-agenda_file = "codemotion-agenda/data/agenda-codemotion-2025.json"
 
 
 def get_agenda_items(file_path):
