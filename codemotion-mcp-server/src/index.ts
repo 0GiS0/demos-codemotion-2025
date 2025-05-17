@@ -9,6 +9,13 @@ import OpenAI from 'openai';
 
 //load env variables
 import dotenv from 'dotenv';
+
+// Tools
+import { registerTimeTool } from './tools/timeTool.js';
+
+
+
+
 dotenv.config();
 
 // Create an express server
@@ -57,50 +64,7 @@ app.post('/mcp', async (req, res) => {
 
         // Add tools
 
-        // Get the time
-        server.tool("time", "Get the current time. It receives an optional timezone parameter. If no timezone is provided, it returns the current time in UTC.",
-            {
-                timezone: z.string().optional()
-            },
-            async ({ timezone }) => {
-
-                const chalk = (await import('chalk')).default;
-                console.log(chalk.blue('Codemotion MCP Server: Time tool called'));
-
-                let date: Date;
-                let timeString: string;
-
-                if (timezone) {
-                    try {
-                        // Intl.DateTimeFormat can format in a specific timezone
-                        const now = new Date();
-                        timeString = new Intl.DateTimeFormat('en-US', {
-                            timeZone: timezone,
-                            hour12: false,
-                            year: 'numeric',
-                            month: '2-digit',
-                            day: '2-digit',
-                            hour: '2-digit',
-                            minute: '2-digit',
-                            second: '2-digit'
-                        }).format(now) + ` (${timezone})`;
-                    } catch (e) {
-                        timeString = `Invalid timezone: ${timezone}`;
-                    }
-                } else {
-                    timeString = new Date().toISOString();
-                }
-
-                return {
-                    content: [
-                        {
-                            type: "text",
-                            text: timeString
-                        }
-                    ]
-                };
-            }
-        );
+        registerTimeTool(server);
 
         // Get sessions from codemotion agenda in Qdrant
         server.tool("sessions", "Get the sessions from codemotion agenda in Qdrant",
