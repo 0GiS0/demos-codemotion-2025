@@ -1,6 +1,7 @@
 ---
 
 mode: 'agent'
+tools: ['browser_navigate', 'browser_click']
 description: 'Este prompt está diseñado para extraer la agenda de Codemotion Madrid 2025 utilizando el MCP Server de Playwright.'
 
 ---
