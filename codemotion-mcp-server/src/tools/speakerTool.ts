@@ -86,16 +86,25 @@ export const registerSpeakerTool = (server: any): void => {
                 const speakersSet = new Set<string>();
 
                 points.forEach((point: any) => {
-                    const speakersData = point.payload?.speakers;
-                    if (speakersData) {
-                        if (typeof speakersData === 'string' && speakersData.trim() !== '') {
-                            // If speakers is a single string, split by commas (as it might be comma-separated)
-                            speakersData.split(', ').forEach(speaker => {
-                                if (speaker.trim() !== '') {
-                                    speakersSet.add(speaker.trim());
-                                }
-                            });
-                        }
+                    // Handle speakers array
+                    if (Array.isArray(point.payload?.speakers)) {
+                        point.payload.speakers.forEach((speaker: string) => {
+                            if (speaker && speaker.trim() !== '') {
+                                speakersSet.add(speaker.trim());
+                            }
+                        });
+                    } 
+                    // Handle speakers as string (comma-separated)
+                    else if (typeof point.payload?.speakers === 'string' && point.payload.speakers.trim() !== '') {
+                        point.payload.speakers.split(', ').forEach(speaker => {
+                            if (speaker.trim() !== '') {
+                                speakersSet.add(speaker.trim());
+                            }
+                        });
+                    }
+                    // Handle individual speaker field
+                    else if (typeof point.payload?.speaker === 'string' && point.payload.speaker.trim() !== '') {
+                        speakersSet.add(point.payload.speaker.trim());
                     }
                 });
 

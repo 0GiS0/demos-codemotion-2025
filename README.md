@@ -32,6 +32,11 @@ Para consultar los datos de la agenda he creado un script en Python que utiliza 
 
 Para nuestra cuarta mision he creado un MCP Server que se encuentra en el direction `codemotion-mcp-server`. Este servidor se encarga de recibir las consultasdel usuario, que le llegan a través de GitHub Copilot Chat para buscar en esa base de datos vectorial las charlas que más se ajustan a la consulta del usuario. También se encarga de darle la hora y el día actual para que le de información de las charlas que se están dando en ese momento o que se van a dar en el futuro. 
 
+El servidor proporciona las siguientes herramientas:
+
+- **time**: Obtener la hora actual, opcionalmente con una zona horaria específica
+- **sessions**: Buscar sesiones de la Codemotion basadas en una consulta y fecha opcional
+- **speakers**: Obtener la lista de todos los ponentes o filtrar según una consulta específica
 
 Puedes probar el servidor usando la herramienta MCP Inspector:
 
