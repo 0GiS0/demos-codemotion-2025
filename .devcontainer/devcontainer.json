@@ -16,7 +16,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"tomoki1207.pdf"
+				"tomoki1207.pdf",
+				"dotenv.dotenv-vscode"
 			]
 		}
 	},
@@ -27,6 +28,7 @@
 		"6333": {
 			"label": "Qdrant",
 			"onAutoForward": "notify"
+			
 		}
 	},
 	"postCreateCommand": "npx -y playwright install chrome"
