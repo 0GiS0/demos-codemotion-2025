@@ -11,6 +11,7 @@ import dotenv from 'dotenv';
 // Tools
 import { registerTimeTool } from './tools/timeTool.js';
 import { registerSessionTool } from './tools/sessionTool.js';
+import { registerSpeakerTool } from './tools/speakerTool.js';
 
 
 dotenv.config();
@@ -68,6 +69,7 @@ app.post('/mcp', async (req, res) => {
             // Add tools
             registerTimeTool(server);
             registerSessionTool(server);
+            registerSpeakerTool(server);
 
             await server.connect(transport);
         } else {
