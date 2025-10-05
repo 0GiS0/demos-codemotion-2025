@@ -1,5 +1,14 @@
 # Demos Codemotion Madrid 2025 🚀
 
+<div align="center">
+
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC140iBrEZbOtvxWsJ-Tb0lQ?style=for-the-badge&logo=youtube&logoColor=white&color=red)](https://www.youtube.com/c/GiselaTorres?sub_confirmation=1)
+[![GitHub followers](https://img.shields.io/github/followers/0GiS0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/0GiS0)
+[![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-Sígueme-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giselatorresbuitrago/)
+[![X Follow](https://img.shields.io/badge/X-Sígueme-black?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/0GiS0)
+
+</div>
+
 ¡Hola developer 👋🏻! En este repo puedes encontrar todas las demos que mostré durante la Codemotion Madrid 2025, donde hablé sobre **GitHub Copilot Chat** en su modo agente y, como no, sobre **MCP Servers**. También puedes ver [este vídeo que he publicado en mi canal de YouTube](https://youtu.be/wvtoy_z99xI) con todas las demos que mostré. 🎥
 
 [![Codemotion Madrid 2025](images/mis%20demos%20de%20codemotion%20madrid%202025.png)](https://youtu.be/wvtoy_z99xI)
