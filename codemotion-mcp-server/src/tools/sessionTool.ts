@@ -50,8 +50,8 @@ export const registerSessionTool = (server: any): void => {
 
                 // Create a Qdrant client
                 const qdrantClient = new QdrantClient({
-                    host: 'qdrant',
-                    port: 6333,
+                    host: process.env.QDRANT_HOST || 'qdrant',
+                    port: Number(process.env.QDRANT_PORT) || 6333,
                     https: false,
                     checkCompatibility: false
                 });
